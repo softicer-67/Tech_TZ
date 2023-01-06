@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+
+    {% block content %}
+
+        <div class="main">
+
+            {% for catalog in catalogs %}
+                <a href="{{catalog}}">{{catalog}}</a>
+            {% endfor %}
+
+        </div>
+
+    {% endblock %}

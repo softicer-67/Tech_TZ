@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+
+    {% block header %}
+        <div class="header">
+            <ui class="header-list">
+                <li><a href="{% url 'index' %}">Главная</a></li>
+            </ui>
+        </div>
+    {% endblock %}
+
+    {% block content %}
+        <div class="main">
+             <p>Имя: {{ans.user_name}}</p>
+             <p>Почта: {{ans.user_email}}</p>
+             <p>Телефон: {{ans.user_phone}}</p>
+             <p>Дата регистрации: {{ans.order_date|date:"Y-m-d"}}</p>
+        </div>
+
+    {% endblock %}
